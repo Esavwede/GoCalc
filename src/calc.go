@@ -20,7 +20,7 @@ func main() {
 		var userOperation string
 		fmt.Scanln(&userOperation)
 
-		// Analyse Input
+		// Determine UserOperation
 		switch userOperation {
 
 		case "A", "a":
@@ -82,6 +82,8 @@ func addition() {
 	// variables
 	var integer1 int
 	var integer2 int
+
+	// Input Checks
 
 	// Addition Input
 	fmt.Println(" Integer 1: ")
