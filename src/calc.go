@@ -1,5 +1,5 @@
 /*
-@Authors: Ogagaoghene Esavwede
+@Authors: [ Ogagaoghene Esavwede ]
 @description: A basic calculator program written in the Go programming language. This calculator can only perform basic arithmetic operations.
 @createdOn: 19/09/2024
 */
@@ -27,13 +27,13 @@ func main() {
 
 			// Addition
 			fmt.Println(" Addition Selected ")
-			additionFunction()
+			addition()
 
 		case "M", "m":
 
 			// Multiplication
 			fmt.Println(" Multiplication Selected ")
-			fmt.Println(" Multiplication Currently Unavailable ")
+			multiplication()
 
 		case "S", "s":
 
@@ -71,7 +71,7 @@ func main() {
 	}
 }
 
-func additionFunction() {
+func addition() {
 
 	// Message
 	fmt.Println(" Only 2 numbers can be added currently ")
@@ -95,4 +95,25 @@ func additionFunction() {
 
 	// Result Output
 	fmt.Printf(" The sum of %v and %v is %v \n ", integer1, integer2, sum)
+}
+
+func multiplication() {
+
+	fmt.Println(" Enter two numbers you want to multiply ")
+
+	// Variables
+	var num1 int
+	var num2 int
+	var product int
+
+	fmt.Println(" num1 ")
+	fmt.Scanln(&num1)
+
+	fmt.Println(" num2 ")
+	fmt.Scanln(&num2)
+
+	product = num1 * num2
+
+	fmt.Printf(" The product of %v and %v is %v ", num1, num2, product)
+
 }
